@@ -2,40 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="projects.html">Projects</a>
-      <a href="work.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-    </nav>
-  </header>
+  <div id="menu" data-active-index="1">
+    <div id="menu-items">
+      <div class="menu-item" onclick="location.href='index.html'">Home</div>
+      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
+      <div class="menu-item" onclick="location.href='work.html'">Work</div>
+      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
+      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+  </div>
 
   <div class="container">
-    <h2>My Projects</h2>
+    <h1>Projects</h1>
+
     <div class="project">
-      <img src="project1.jpg" alt="Project 1">
-      <p>Project 1 - A responsive website made with HTML, CSS, and JavaScript.</p>
+      <h2>Fitness Tracker App</h2>
+      <img src="images/project1.jpg" alt="Fitness App Screenshot" />
+      <p>A Flutter-based fitness tracking app to log workouts and monitor progress. Includes goals, charts, and reminders.</p>
     </div>
+
     <div class="project">
-      <img src="project2.jpg" alt="Project 2">
-      <p>Project 2 - A mobile app developed using Flutter for fitness tracking.</p>
+      <h2>Responsive Portfolio Website</h2>
+      <img src="images/project2.jpg" alt="Portfolio Website Screenshot" />
+      <p>This personal website was created with HTML, CSS, and JavaScript with dynamic background and responsive layout.</p>
     </div>
+
     <div class="project">
-      <img src="project3.jpg" alt="Project 3">
-      <p>Project 3 - A class project: student management system built with Python and SQLite.</p>
+      <h2>Online Quiz System</h2>
+      <img src="images/project3.jpg" alt="Quiz App Screenshot" />
+      <p>A web application that lets users take quizzes, see results instantly, and tracks scores using a MySQL database.</p>
     </div>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+  <footer>&copy; 2025 [Your Name]. All rights reserved.</footer>
+  <script src="script.js"></script>
 </body>
 </html>

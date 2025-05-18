@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="projects.html">Projects</a>
-      <a href="work.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-    </nav>
-  </header>
+  <div id="menu" data-active-index="4">
+    <div id="menu-items">
+      <div class="menu-item" onclick="location.href='index.html'">Home</div>
+      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
+      <div class="menu-item" onclick="location.href='work.html'">Work</div>
+      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
+      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+  </div>
 
   <div class="container">
-    <h2>My Blog</h2>
+    <h1>Blog</h1>
+
     <article>
-      <h3>How I Got Started with Web Development</h3>
-      <p>My journey into web development began during high school. I was fascinated by how websites worked and started learning HTML and CSS on my own...</p>
+      <h2>Learning JavaScript the Fun Way</h2>
+      <p><em>Posted on May 5, 2025</em></p>
+      <p>When I first started learning JavaScript, I found it difficult to understand asynchronous code. But once I grasped promises and async/await, everything became smoother!</p>
     </article>
+
     <article>
-      <h3>Learning Git and GitHub</h3>
-      <p>One of the most valuable tools I've learned is Git. Version control has helped me stay organized and collaborate with others...</p>
+      <h2>Building My First Flutter App</h2>
+      <p><em>Posted on April 18, 2025</em></p>
+      <p>Flutter has been a game changer for cross-platform development. I built a fitness app as my first project, and it worked perfectly on Android and iOS.</p>
     </article>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+  <footer>&copy; 2025 [Your Name]. All rights reserved.</footer>
+  <script src="script.js"></script>
 </body>
 </html>

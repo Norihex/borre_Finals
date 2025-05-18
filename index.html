@@ -2,29 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="projects.html">Projects</a>
-      <a href="work.html">Work Experience</a>
-      <a href="blog.html">Blog</a>
-    </nav>
-  </header>
+  <div id="menu" data-active-index="0">
+    <div id="menu-items">
+      <div class="menu-item" onclick="location.href='index.html'">Home</div>
+      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
+      <div class="menu-item" onclick="location.href='work.html'">Work</div>
+      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
+      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
+    </div>
+    <div id="menu-background-pattern"></div>
+    <div id="menu-background-image"></div>
+  </div>
+
+  <a id="source-link" class="meta-link" href="http://dnacapital.com" target="_blank">
+    <i class="fa-solid fa-link"></i><span>Source</span>
+  </a>
+
+  <a id="yt-link" class="meta-link" href="https://youtu.be/NUeCNvYY_x4" target="_blank">
+    <i class="fa-brands fa-youtube"></i><span>2.5 min tutorial</span>
+  </a>
 
   <div class="container">
-    <h2>Welcome!</h2>
-    <p>Hello! I'm [Your Name], a passionate developer eager to create amazing digital experiences. Welcome to my portfolio site where you can learn more about me, my work, and my journey.</p>
+    <h1>Welcome!</h1>
+    <p>Hi, I'm [Your Name], a passionate developer eager to share my work and journey.</p>
   </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    &copy; 2025 [Your Name]. All rights reserved.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
