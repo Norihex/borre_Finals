@@ -1,341 +1,219 @@
-<body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
+<!-- Header -->
+<header>
+  <a href="#" class="logo">Juba<span>.</span>dev</a>
+  <div id="menu-icon">≡</div>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section class="home" id="home">
+  <div class="particle-container"></div>
+  <div class="home-content">
+    <h1>Hi, I'm <span>Juba Loudahi</span></h1>
+    <div class="text-animate">
+      <h3>Full-Stack Developer</h3>
     </div>
-    
-    <!-- Theme Toggle Button -->
-    <div class="theme-toggle" id="theme-toggle">
-        <i class="fas fa-moon"></i>
+    <p>I'm a passionate C# developer specializing in creating modern web applications with clean architecture and best practices. With expertise in both front-end and back-end technologies, I build scalable and maintainable software solutions.</p>
+    <div class="social-links">
+      <a href="#"><span class="icon">in</span></a>
+      <a href="#"><span class="icon">gh</span></a>
+      <a href="#"><span class="icon">tw</span></a>
     </div>
-    
-    <!-- Header -->
-    <header id="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">Portfolio</a>
-            <nav class="navbar">
-                <ul id="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1>Hello, I'm <span class="typed-text" id="typed-text"></span></h1>
-            <h2>I create amazing web experiences</h2>
-            <p>A passionate full-stack developer specialized in building exceptional digital experiences that are fast, accessible, and responsive.</p>
-            <div class="hero-btn">
-                <a href="#projects" class="btn">View My Work</a>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile Image">
-                </div>
-                <div class="about-text">
-                    <h3>I'm a Full-stack Developer with a passion for creating innovative solutions</h3>
-                    <p>I'm a skilled web developer with experience in creating custom websites with responsive designs. I specialize in building applications with HTML, CSS, JavaScript, React, Node.js and other modern frameworks.</p>
-                    <p>With over 5 years of experience, I've worked on diverse projects ranging from small business websites to large enterprise applications. I'm passionate about writing clean, efficient code and delivering exceptional user experiences.</p>
-                    <div class="stats-box">
-                        <div class="stats-item">
-                            <div class="stats-number" data-count="5">0</div>
-                            <div class="stats-text">Years Experience</div>
-                        </div>
-                        <div class="stats-item">
-                            <div class="stats-number" data-count="100">0</div>
-                            <div class="stats-text">Projects Completed</div>
-                        </div>
-                        <div class="stats-item">
-                            <div class="stats-number" data-count="50">0</div>
-                            <div class="stats-text">Happy Clients</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
-            <div class="skills-content">
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>HTML5</h4>
-                        <span>95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="95%"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>CSS3</h4>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="90%"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>JavaScript</h4>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="85%"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>React</h4>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="80%"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>Node.js</h4>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="75%"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <h4>UI/UX Design</h4>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <span data-width="70%"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="app">App Development</button>
-                <button class="filter-btn" data-filter="design">UI/UX Design</button>
-            </div>
-            <div class="projects-container">
-                <div class="project-item" data-category="web">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
-                    <div class="project-overlay">
-                        <h3>E-commerce Website</h3>
-                        <p>A fully functional online store with cart and payment integration</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item" data-category="app">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="project-img">
-                    <div class="project-overlay">
-                        <h3>Task Manager App</h3>
-                        <p>A productivity app to help users manage their tasks</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item" data-category="design">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
-                    <div class="project-overlay">
-                        <h3>Brand Identity Design</h3>
-                        <p>Complete brand identity package for a startup</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item" data-category="web">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
-                    <div class="project-overlay">
-                        <h3>Portfolio Website</h3>
-                        <p>A personal portfolio site for a photographer</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item" data-category="app">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
-                    <div class="project-overlay">
-                        <h3>Weather App</h3>
-                        <p>A real-time weather application with location services</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item" data-category="design">
-                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
-                    <div class="project-overlay">
-                        <h3>Mobile UI Kit</h3>
-                        <p>UI components library for mobile applications</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-link"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>New York, NY, United States</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>hello@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+1 234 567 8900</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Website</h4>
-                            <p>www.yourwebsite.com</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="#" class="footer-logo">Portfolio</a>
-                    <p>I create digital experiences that are beautiful, fast, and accessible. Let's work together to bring your ideas to life.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-title">Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-title">Services</h3>
-                    <ul>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">App Development</a></li>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">SEO Optimization</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
-            </div>
-            <div class="back-to-top" id="back-to-top">
-                <i class="fas fa-arrow-up"></i>
-            </div>
-        </div>
-    </footer>
-    
-    
-</body>
-</html>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </div>
+
+  <div class="home-img">
+    <div class="glowing-circle">
+      <div class="image">
+        <img src="" alt="Juba Loudahi">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h2 class="heading">About <span>Me</span></h2>
+  <div class="about-content">
+    <div class="about-img">
+      <img src="" alt="Working on code">
+    </div>
+    <div class="about-text">
+      <h3>Passionate Full-Stack Developer</h3>
+      <p>With a strong foundation in C# and ASP.NET, I develop robust and scalable applications that solve real-world problems. My experience spans across various domains of software development, from designing clean architectures to implementing modern UI/UX patterns.</p>
+      <p>I'm dedicated to continuous learning and staying updated with the latest industry trends and technologies. My approach to development focuses on writing clean, maintainable code while delivering exceptional user experiences.</p>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills" id="skills">
+  <h2 class="heading">My <span>Skills</span></h2>
+  <div class="skills-container">
+    <div class="skills-box">
+      <h3>Back-End</h3>
+      <p>Expertise in server-side development with focus on scalable and maintainable solutions.</p>
+      <div class="skills-list">
+        <span>C# ASP.NET Core</span>
+        <span>Java</span>
+        <span>PHP</span>
+        <span>Python</span>
+        <span>Flask</span>
+        <span>Django</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Front-End</h3>
+      <p>Creating modern and responsive user interfaces with the latest technologies.</p>
+      <div class="skills-list">
+        <span>Telerik Kendo UI</span>
+        <span>React</span>
+        <span>Angular</span>
+        <span>Vue.js</span>
+        <span>HTML/CSS</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Architecture</h3>
+      <p>Designing robust systems with best practices and patterns.</p>
+      <div class="skills-list">
+        <span>Hexagonal</span>
+        <span>Microservices</span>
+        <span>Clean Architecture</span>
+        <span>CQRS</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Design Patterns</h3>
+      <p>Implementing proven solutions to common software design problems.</p>
+      <div class="skills-list">
+        <span>Creational</span>
+        <span>Structural</span>
+        <span>Behavioral</span>
+        <span>Conceptual</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Databases</h3>
+      <p>Working with various database systems for efficient data storage and retrieval.</p>
+      <div class="skills-list">
+        <span>SQL Server</span>
+        <span>MySQL</span>
+        <span>MongoDB</span>
+        <span>EntityFramework</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <h3>Collaboration</h3>
+      <p>Effective team collaboration and project management skills.</p>
+      <div class="skills-list">
+        <span>Git/GitHub</span>
+        <span>Jira</span>
+        <span>Agile</span>
+        <span>Scrum</span>
+        <span>Kanban</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2 class="heading">Recent <span>Projects</span></h2>
+  <div class="projects-container">
+    <div class="projects-box">
+      <img src="" alt="Project 1">
+      <div class="projects-layer">
+        <h4>E-Commerce Platform</h4>
+        <p>Full-stack e-commerce solution with C# and React, implementing microservices architecture.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+
+    <div class="projects-box">
+      <img src="" alt="Project 2">
+      <div class="projects-layer">
+        <h4>CRM System</h4>
+        <p>Customer relationship management system built with ASP.NET Core and Angular.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+
+    <div class="projects-box">
+      <img src="" alt="Project 3">
+      <div class="projects-layer">
+        <h4>Task Management App</h4>
+        <p>Collaborative task management platform using CQRS pattern and Vue.js.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+
+    <div class="projects-box">
+      <img src="" alt="Project 4">
+      <div class="projects-layer">
+        <h4>Inventory System</h4>
+        <p>Real-time inventory tracking system with ASP.NET Core and SignalR.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+
+    <div class="projects-box">
+      <img src="" alt="Project 5">
+      <div class="projects-layer">
+        <h4>Analytics Dashboard</h4>
+        <p>Interactive analytics dashboard with C# backend and React/D3.js frontend.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+
+    <div class="projects-box">
+      <img src="" alt="Project 6">
+      <div class="projects-layer">
+        <h4>Health Monitoring System</h4>
+        <p>IoT-based health monitoring solution with microservices architecture.</p>
+        <a href="#"><span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+    </div>
+    <div class="input-box">
+      <input type="tel" placeholder="Phone Number">
+      <input type="text" placeholder="Subject">
+    </div>
+    <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-text">
+    <p>&copy; 2025 Juba Loudahi | All Rights Reserved</p>
+  </div>
+  <div class="footer-iconTop">
+    <a href="#home"><span>↑</span></a>
+  </div>
+</footer>
