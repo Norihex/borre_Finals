@@ -9,46 +9,51 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to top, #003366, #0f1c2e);
       color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 4em auto;
+      background-color: #0b1a2f;
+      border: 2px solid white;
+      border-radius: 10px;
       padding: 2em;
     }
-    h1 {
+    a { color: #66ccff; }
+    h1, h2 { text-align: center; color: #66ccff; }
+    img { max-width: 100%; border-radius: 6px; margin-top: 1em; }
+    .back-button {
       text-align: center;
+      margin-top: 2em;
     }
-    .contact-info {
-      max-width: 600px;
-      margin: 2em auto;
-      line-height: 1.6;
+    .back-button a {
+      background-color: #0e76a8;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .back-button a:hover {
+      background-color: #095c82;
     }
   </style>
 </head>
 <body>
-  <h1>Contact Me</h1>
-  <div class="contact-info">
+  <div class="container">
+    <h1>Contact Me</h1>
     <p>Email: yourname@example.com</p>
     <p>Phone: (123) 456-7890</p>
     <p>Socials:</p>
     <ul>
-      <li><a href="#" style="color: #66ccff;">Twitter</a></li>
-      <li><a href="#" style="color: #66ccff;">LinkedIn</a></li>
-      <li><a href="#" style="color: #66ccff;">GitHub</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">GitHub</a></li>
     </ul>
+    <div class="back-button">
+      <a href="index.html">← Back to Homepage?</a>
+    </div>
   </div>
-
-  <!-- Back Button -->
-  <a href="index.html" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0e76a8;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: background-color 0.3s ease;
-  " onmouseover="this.style.backgroundColor='#095c82';" onmouseout="this.style.backgroundColor='#0e76a8';">
-    ← Back to Homepage?
-  </a>
 </body>
 </html>
