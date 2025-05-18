@@ -1,42 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="menu" data-active-index="3">
-    <div id="menu-items">
-      <div class="menu-item" onclick="location.href='index.html'">Home</div>
-      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
-      <div class="menu-item" onclick="location.href='work.html'">Work</div>
-      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
-      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
-    </div>
-    <div id="menu-background-pattern"></div>
-    <div id="menu-background-image"></div>
-  </div>
-
-  <div class="container">
+  <div class="page-container">
     <h1>Contact Me</h1>
-    <p>You can reach me through the form below or via my contact details.</p>
-
-    <form action="mailto:your@email.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <p>Email: your@email.com</p>
-    <p>Phone: +63 912 345 6789</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    <p>Have a question, project, or opportunity? Let’s connect!</p>
+    <ul class="contact-details">
+      <li>Email: yourname@example.com</li>
+      <li>Phone: (123) 456-7890</li>
+      <li>
+        Social: 
+        <a href="#">Twitter</a> | 
+        <a href="#">GitHub</a> | 
+        <a href="#">LinkedIn</a>
+      </li>
+    </ul>
   </div>
-
-  <footer>&copy; 2025 [Your Name]. All rights reserved.</footer>
-  <script src="script.js"></script>
 </body>
 </html>

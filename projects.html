@@ -1,48 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="menu" data-active-index="1">
-    <div id="menu-items">
-      <div class="menu-item" onclick="location.href='index.html'">Home</div>
-      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
-      <div class="menu-item" onclick="location.href='work.html'">Work</div>
-      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
-      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
-    </div>
-    <div id="menu-background-pattern"></div>
-    <div id="menu-background-image"></div>
+  <div class="page-container">
+    <h1>My Projects</h1>
+    
+    <section class="project">
+      <h2>Portfolio Website</h2>
+      <img src="project1.png" alt="Portfolio preview">
+      <p>A personal website to showcase my work, experience, and blog. Built with HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section class="project">
+      <h2>Task Tracker App</h2>
+      <img src="project2.png" alt="Task Tracker App">
+      <p>An interactive to-do app built using React to manage daily tasks efficiently.</p>
+    </section>
+
+    <section class="project">
+      <h2>Weather Dashboard</h2>
+      <img src="project3.png" alt="Weather App">
+      <p>A weather dashboard that fetches real-time data from OpenWeather API and displays forecasts.</p>
+    </section>
   </div>
-
-  <div class="container">
-    <h1>Projects</h1>
-
-    <div class="project">
-      <h2>Fitness Tracker App</h2>
-      <img src="images/project1.jpg" alt="Fitness App Screenshot" />
-      <p>A Flutter-based fitness tracking app to log workouts and monitor progress. Includes goals, charts, and reminders.</p>
-    </div>
-
-    <div class="project">
-      <h2>Responsive Portfolio Website</h2>
-      <img src="images/project2.jpg" alt="Portfolio Website Screenshot" />
-      <p>This personal website was created with HTML, CSS, and JavaScript with dynamic background and responsive layout.</p>
-    </div>
-
-    <div class="project">
-      <h2>Online Quiz System</h2>
-      <img src="images/project3.jpg" alt="Quiz App Screenshot" />
-      <p>A web application that lets users take quizzes, see results instantly, and tracks scores using a MySQL database.</p>
-    </div>
-  </div>
-
-  <footer>&copy; 2025 [Your Name]. All rights reserved.</footer>
-  <script src="script.js"></script>
 </body>
 </html>

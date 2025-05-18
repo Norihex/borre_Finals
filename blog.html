@@ -1,42 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog | My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a2e0f1f2de.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="menu" data-active-index="4">
-    <div id="menu-items">
-      <div class="menu-item" onclick="location.href='index.html'">Home</div>
-      <div class="menu-item" onclick="location.href='projects.html'">Projects</div>
-      <div class="menu-item" onclick="location.href='work.html'">Work</div>
-      <div class="menu-item" onclick="location.href='contact.html'">Contact</div>
-      <div class="menu-item" onclick="location.href='blog.html'">Blog</div>
-    </div>
-    <div id="menu-background-pattern"></div>
-    <div id="menu-background-image"></div>
-  </div>
+  <div class="page-container">
+    <h1>My Blog</h1>
 
-  <div class="container">
-    <h1>Blog</h1>
-
-    <article>
-      <h2>Learning JavaScript the Fun Way</h2>
-      <p><em>Posted on May 5, 2025</em></p>
-      <p>When I first started learning JavaScript, I found it difficult to understand asynchronous code. But once I grasped promises and async/await, everything became smoother!</p>
+    <article class="blog-entry">
+      <h2>Breaking Into Web Development</h2>
+      <p><em>April 20, 2025</em></p>
+      <p>Getting started was scary. But I found that consistency, community, and projects helped me grow as a developer.</p>
     </article>
 
-    <article>
-      <h2>Building My First Flutter App</h2>
-      <p><em>Posted on April 18, 2025</em></p>
-      <p>Flutter has been a game changer for cross-platform development. I built a fitness app as my first project, and it worked perfectly on Android and iOS.</p>
+    <article class="blog-entry">
+      <h2>5 Tools I Use Daily</h2>
+      <p><em>May 10, 2025</em></p>
+      <p>From VS Code to Figma, these tools have boosted my productivity and streamlined my creative workflow.</p>
     </article>
   </div>
-
-  <footer>&copy; 2025 [Your Name]. All rights reserved.</footer>
-  <script src="script.js"></script>
 </body>
 </html>
