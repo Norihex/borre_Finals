@@ -1,180 +1,341 @@
-<header class="l-header">
-  <nav class="nav bd-grid">
-    <div>
-      <a href="#" class="nav__logo">Karimi</a>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
-
-    <div class="nav__menu" id="nav-menu">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
+    
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
     </div>
-
-    <div class="nav__toggle" id="nav-toggle">
-      <i class='bx bx-menu'></i>
-    </div>
-  </nav>
-</header>
-
-<main class="l-main">
-  <!--===== HOME =====-->
-  <section class="home bd-grid" id="home">
-    <div class="home__data">
-      <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Karimi</span><br> Frontend Developer</h1>
-
-      <a href="#" class="button">Contact</a>
-    </div>
-
-    <div class="home__social">
-      <a href="https://www.linkedin.com/in/wahidullah-karimi-22" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-      <a href="https://github.com/karimi-wahid" class="home__social-icon"><i class='bx bxl-github'></i></a>
-    </div>
-
-    <div class="home__img">
-      <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <mask id="mask0" mask-type="alpha">
-          <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-        </mask>
-        <g mask="url(#mask0)">
-          <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-          <image class="home__blob-img" x="-20" y="40" href="https://api.removal.ai/download/g1/preview/6be5c081-94ad-48cd-bde1-c0cfeb587211.png" />
-        </g>
-      </svg>
-    </div>
-  </section>
-
-  <!--===== ABOUT =====-->
-  <section class="about section " id="about">
-    <h2 class="section-title">About</h2>
-
-    <div class="about__container bd-grid">
-      <div class="about__img">
-        <img src="https://avatars.githubusercontent.com/u/134136262?v=4" alt="">
-      </div>
-
-      <div>
-        <h2 class="about__subtitle">I'am Wahidullah Karimi</h2>
-        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
-      </div>
-    </div>
-  </section>
-
-  <!--===== SKILLS =====-->
-  <section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills__container bd-grid">
-      <div>
-        <h2 class="skills__subtitle">Profesional Skills</h2>
-        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-html5 skills__icon'></i>
-            <span class="skills__name">HTML5</span>
-          </div>
-          <div class="skills__bar skills__html">
-
-          </div>
-          <div>
-            <span class="skills__percentage">95%</span>
-          </div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar">
+                <ul id="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-css3 skills__icon'></i>
-            <span class="skills__name">CSS3</span>
-          </div>
-          <div class="skills__bar skills__css">
-
-          </div>
-          <div>
-            <span class="skills__percentage">85%</span>
-          </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Hello, I'm <span class="typed-text" id="typed-text"></span></h1>
+            <h2>I create amazing web experiences</h2>
+            <p>A passionate full-stack developer specialized in building exceptional digital experiences that are fast, accessible, and responsive.</p>
+            <div class="hero-btn">
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
         </div>
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxl-javascript skills__icon'></i>
-            <span class="skills__name">JAVASCRIPT</span>
-          </div>
-          <div class="skills__bar skills__js">
-
-          </div>
-          <div>
-            <span class="skills__percentage">65%</span>
-          </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
-        <div class="skills__data">
-          <div class="skills__names">
-            <i class='bx bxs-paint skills__icon'></i>
-            <span class="skills__name">UX/UI</span>
-          </div>
-          <div class="skills__bar skills__ux">
-
-          </div>
-          <div>
-            <span class="skills__percentage">85%</span>
-          </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile Image">
+                </div>
+                <div class="about-text">
+                    <h3>I'm a Full-stack Developer with a passion for creating innovative solutions</h3>
+                    <p>I'm a skilled web developer with experience in creating custom websites with responsive designs. I specialize in building applications with HTML, CSS, JavaScript, React, Node.js and other modern frameworks.</p>
+                    <p>With over 5 years of experience, I've worked on diverse projects ranging from small business websites to large enterprise applications. I'm passionate about writing clean, efficient code and delivering exceptional user experiences.</p>
+                    <div class="stats-box">
+                        <div class="stats-item">
+                            <div class="stats-number" data-count="5">0</div>
+                            <div class="stats-text">Years Experience</div>
+                        </div>
+                        <div class="stats-item">
+                            <div class="stats-number" data-count="100">0</div>
+                            <div class="stats-text">Projects Completed</div>
+                        </div>
+                        <div class="stats-item">
+                            <div class="stats-number" data-count="50">0</div>
+                            <div class="stats-text">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div>
-        <img src="https://images.pexels.com/photos/5475752/pexels-photo-5475752.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="skills__img">
-      </div>
-    </div>
-  </section>
-
-  <!--===== WORK =====-->
-  <section class="work section" id="work">
-    <h2 class="section-title">Work</h2>
-
-    <div class="work__container bd-grid">
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-      <a href="" class="work__img">
-        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-      </a>
-    </div>
-  </section>
-
-  <!--===== CONTACT =====-->
-  <section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact__container bd-grid">
-      <form action="" class="contact__form">
-        <input type="text" placeholder="Name" class="contact__input">
-        <input type="mail" placeholder="Email" class="contact__input">
-        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-        <input type="button" value="Send" class="contact__button button">
-      </form>
-    </div>
-  </section>
-</main>
-
-<!--===== FOOTER =====-->
-<footer class="footer">
-  <p class="footer__title">Karimi</p>
-  <div class="footer__social">
-    <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-    <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-    <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
-  </div>
-  <p class="footer__copy">&#169; Karimi. All rigths reserved</p>
-</footer>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>HTML5</h4>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="95%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>CSS3</h4>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="90%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>JavaScript</h4>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="85%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>React</h4>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="80%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>Node.js</h4>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="75%"></span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <h4>UI/UX Design</h4>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span data-width="70%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            <div class="projects-container">
+                <div class="project-item" data-category="web">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
+                    <div class="project-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully functional online store with cart and payment integration</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Task Manager App</h3>
+                        <p>A productivity app to help users manage their tasks</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity package for a startup</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="web">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio site for a photographer</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="app">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Weather App</h3>
+                        <p>A real-time weather application with location services</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="https://images.pexels.com/photos/1714205/pexels-photo-1714205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Mobile UI Kit</h3>
+                        <p>UI components library for mobile applications</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>New York, NY, United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 234 567 8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.yourwebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Portfolio</a>
+                    <p>I create digital experiences that are beautiful, fast, and accessible. Let's work together to bring your ideas to life.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 My Portfolio. All Rights Reserved.</p>
+            </div>
+            <div class="back-to-top" id="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
