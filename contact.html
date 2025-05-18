@@ -1,25 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #003366, #0f1c2e);
+      color: white;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+    }
+    .contact-info {
+      max-width: 600px;
+      margin: 2em auto;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-  <div class="page-container">
-    <h1>Contact Me</h1>
-    <p>Have a question, project, or opportunity? Let’s connect!</p>
-    <ul class="contact-details">
-      <li>Email: yourname@example.com</li>
-      <li>Phone: (123) 456-7890</li>
-      <li>
-        Social: 
-        <a href="#">Twitter</a> | 
-        <a href="#">GitHub</a> | 
-        <a href="#">LinkedIn</a>
-      </li>
+  <h1>Contact Me</h1>
+  <div class="contact-info">
+    <p>Email: yourname@example.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Socials:</p>
+    <ul>
+      <li><a href="#" style="color: #66ccff;">Twitter</a></li>
+      <li><a href="#" style="color: #66ccff;">LinkedIn</a></li>
+      <li><a href="#" style="color: #66ccff;">GitHub</a></li>
     </ul>
   </div>
+
+  <!-- Back Button -->
+  <a href="index.html" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0e76a8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#095c82';" onmouseout="this.style.backgroundColor='#0e76a8';">
+    ← Back to Homepage?
+  </a>
 </body>
 </html>

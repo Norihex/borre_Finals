@@ -1,32 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Projects</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #003366, #0f1c2e);
+      color: white;
+      padding: 2em;
+    }
+    .project {
+      margin-bottom: 2em;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    h2 {
+      color: #66ccff;
+    }
+  </style>
 </head>
 <body>
-  <div class="page-container">
-    <h1>My Projects</h1>
-    
-    <section class="project">
-      <h2>Portfolio Website</h2>
-      <img src="project1.png" alt="Portfolio preview">
-      <p>A personal website to showcase my work, experience, and blog. Built with HTML, CSS, and JavaScript.</p>
-    </section>
+  <h1 style="text-align:center;">My Projects</h1>
 
-    <section class="project">
-      <h2>Task Tracker App</h2>
-      <img src="project2.png" alt="Task Tracker App">
-      <p>An interactive to-do app built using React to manage daily tasks efficiently.</p>
-    </section>
-
-    <section class="project">
-      <h2>Weather Dashboard</h2>
-      <img src="project3.png" alt="Weather App">
-      <p>A weather dashboard that fetches real-time data from OpenWeather API and displays forecasts.</p>
-    </section>
+  <div class="project">
+    <h2>Portfolio Website</h2>
+    <p>A personal website showcasing my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+    <img src="https://via.placeholder.com/600x300?text=Portfolio+Preview" alt="Portfolio Screenshot">
   </div>
+
+  <div class="project">
+    <h2>Task Tracker App</h2>
+    <p>A simple to-do list app made with React. Features include task filtering, dark mode, and localStorage support.</p>
+    <img src="https://via.placeholder.com/600x300?text=Task+App" alt="Task App Screenshot">
+  </div>
+
+  <div class="project">
+    <h2>Blog Platform</h2>
+    <p>A lightweight blog site built with Flask and SQLite, designed for quick blogging and markdown support.</p>
+    <img src="https://via.placeholder.com/600x300?text=Blog+Platform" alt="Blog Screenshot">
+  </div>
+
+  <!-- Back Button -->
+  <a href="index.html" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0e76a8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#095c82';" onmouseout="this.style.backgroundColor='#0e76a8';">
+    ← Back to Homepage?
+  </a>
 </body>
 </html>
